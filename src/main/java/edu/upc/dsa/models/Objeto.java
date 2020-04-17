@@ -2,15 +2,15 @@ package edu.upc.dsa.models;
 
 public class Objeto {
     public String id;
-    public int cantidad;
+    public String nombre;
 
     public Objeto(){
     }
 
-    public Objeto(String id, int cantidad){
+    public Objeto(String id, String nombre){
         this();
-        this.cantidad=cantidad;
         this.id=id;
+        this.nombre=nombre;
     }
 
     public String getId() {
@@ -21,16 +21,16 @@ public class Objeto {
         this.id = id;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     @Override
     public String toString() {
-        return "Object [id="+id+", cantidad=" + cantidad + "]";
+        return "Object [id="+id+",nombre"+nombre+ "]";
     }
 }

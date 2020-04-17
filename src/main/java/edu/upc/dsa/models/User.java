@@ -1,5 +1,7 @@
 package edu.upc.dsa.models;
 
+import edu.upc.dsa.util.RandomUtils;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -7,7 +9,7 @@ public class User {
     public String id;
     public String name;
     public String surname;
-    public List<Object> objectList = null;
+    public List<Objeto> objectList = null;
 
     public User(){
     }
@@ -36,11 +38,19 @@ public class User {
         this.name = name;
     }
 
-    public List<Object> getObjectList() {
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public List<Objeto> getObjectList() {
         return objectList;
     }
 
-    public void setObjectList(List<Object> objectList) {
+    public void setObjectList(List<Objeto> objectList) {
         this.objectList = objectList;
     }
 
